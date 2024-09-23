@@ -1,0 +1,6 @@
+DirectoryIndex public/index.php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !-l
+RewriteRule ^.*$ public/index.php [L,QSA]
